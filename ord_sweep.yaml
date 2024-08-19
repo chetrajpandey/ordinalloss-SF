@@ -1,0 +1,13 @@
+# sweep.yaml
+program: ordinal_expts/train_ord.py
+method: grid
+metric:
+  goal: maximize
+  name: val_geomean
+parameters:
+  learning_rate:
+    values: 0.01
+  weight_decay:
+    values: 0.01
+  alpha:
+    values: 2
